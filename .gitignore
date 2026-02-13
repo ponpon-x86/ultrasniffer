@@ -1,0 +1,6 @@
+.vscode/
+bin/
+build/
+CMakePresets.json
+app/npcap
+app/pcapplusplus
