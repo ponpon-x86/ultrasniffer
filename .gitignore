@@ -4,3 +4,8 @@ build/
 CMakePresets.json
 app/npcap
 app/pcapplusplus
+app/3rdParty
+ftp_data.pcap
+ftp.pcap
+other.pcap
+tcp_clean.pcap
