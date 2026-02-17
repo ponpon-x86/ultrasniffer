@@ -302,7 +302,7 @@ Type Parser::determinePacketType(const pcpp::RawPacket& raw_packet) {
             }
 
             return DATA;
-        }
+        } else ++it;
     }
 
     // 2.2 DATA (DEFAULT PORT)
