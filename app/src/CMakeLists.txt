@@ -9,3 +9,4 @@ add_executable(ultrasniffer ${SOURCES})
 
 target_link_libraries(ultrasniffer PUBLIC PcapPlusPlus::Pcap++ PcapPlusPlus::Common++)
 # target_include_directories(ultrasniffer PRIVATE ${PROJECT_SOURCE_DIR}/include)
+install(TARGETS ultrasniffer DESTINATION .)
