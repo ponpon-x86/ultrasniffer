@@ -54,8 +54,10 @@ int main(int argc, char *argv[]) {
     parser.parse(argv[1]);
 
     killswitch = true;
-    for (auto& thread : threads)
-        thread.join();
+    for (int i = 0; i < 4; ++i) {
+        cv.at(i).notify_one();
+        threads.at(i).join();
+    }
 
     return 0;
 }
